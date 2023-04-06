@@ -65,7 +65,7 @@ public class PlayerControllerX : MonoBehaviour
 
         else if (other.gameObject.CompareTag("Ground"))
         {
-            playerRb.AddForce(Vector3.up * 500, ForceMode.Impulse);
+            playerRb.AddForce(Vector3.up * 15, ForceMode.Impulse);
             playerAudio.PlayOneShot(bounceSound, 1.0f);
         }
     }
